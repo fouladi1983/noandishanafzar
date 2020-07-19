@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,9 @@ export class HomeComponent implements OnInit {
   title = 'نواندیشان افزار';
   stickyHeader: boolean = false;
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit() {
   }
@@ -18,12 +21,24 @@ export class HomeComponent implements OnInit {
   scroll = (event) => {
     if(window.pageYOffset > 300){
       this.stickyHeader = true;
-      console.log(`it's fixed`);
-      console.log(this.stickyHeader);
     }else{
       this.stickyHeader = false;
-      console.log(this.stickyHeader);
     }
       
+  }
+
+  goToFinancialTools() {
+    this.router.navigate([])
+    .then(result => { window.open('/financial-tools', '_blank'); });
+  }
+
+  goToFRankingTools() {
+    this.router.navigate([])
+    .then(result => { window.open('/ranking-tools', '_blank'); });
+  }
+
+  goToMarketTools() {
+    this.router.navigate([])
+    .then(result => { window.open('/market-tools', '_blank'); });
   }
 }

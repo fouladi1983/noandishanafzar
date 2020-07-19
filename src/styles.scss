@@ -2,10 +2,26 @@
 
 // Import common styles
 @import 'app-common';
-@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+@font-face {
+
+    font-family: "yekan";
+    
+    src: url('./assets/fonts/Yekan.eot');
+    
+    src: url('./assets/fonts/Yekan.eot?#iefix') format("embedded-opentype"),
+        url('./assets/fonts/Yekan.woff') format("woff"),
+        url('./assets/fonts/Yekan.ttf') format("truetype"),
+        url('./assets/fonts/Yekan.svg#BYekan') format("svg");
+    
+    font-weight: normal;
+    
+    font-style: normal
+    
+    }
 *{
     margin: 0;
     padding: 0;
+    font-family: "yekan";
 }
 html, body {
     height: 100%;
@@ -14,8 +30,6 @@ body {
     direction: rtl;
     background-color: white;
     color: #333;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 300;
 }
 a{
     text-decoration: none;

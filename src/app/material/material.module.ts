@@ -1,12 +1,9 @@
 import { NgModule } from '@angular/core';
-import {MatGridListModule} from '@angular/material/grid-list';
 
-const MaterialComponents = [
-  MatGridListModule
-];
+const MaterialComponents = [];
 
 @NgModule({
-  imports: [MatGridListModule],
-  exports: [MatGridListModule]
+  imports: [],
+  exports: []
 })
 export class MaterialModule { }
