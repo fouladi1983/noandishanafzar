@@ -1,0 +1,16 @@
+.test1{
+    list-style: none;
+    border: 1px dotted red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+.test1 div{
+    border: 1px solid black;
+    margin: 0.5em;
+    padding: 0.5em;
+}
